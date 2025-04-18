@@ -1,0 +1,18 @@
+Structure of test cases:
+
+- Prerequisites
+	-- Set of valid data
+	-- Set of invalid data
+
+- Validations of fields
+	-- Validations on frontend
+	-- Validations on backend
+	
+- Validations of response
+
+Types of test:
+- Positive flow
+- Negative flow
+	-- Check validation on frontend
+	-- Check validation of backend
+	-- Check error codes returns in response
