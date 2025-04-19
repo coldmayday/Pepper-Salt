@@ -1,0 +1,24 @@
+1. Positive check
+	Use test data set with valid data
+	Fulfill all filds with valid data in correct way
+	Perform registration
+	Verify sucesful registration
+	
+2. Negative check - froentend validations
+	Use test data with invalid data
+	Fulfill the <Field_Name> field with <Invalid_value> value
+	Validate behavior on frontend - <Expected_behaviour>
+	
+	|Iteration_name                |Field_Name|Invalid_value|Expected_behaviour                          |
+	|Name is empty                 |Name      |Null         |Red notification appears with proper message|
+	|Name contain forbidden symbols|Name      |!Alicia<>    |Red notification appears with proper message|
+	|...                           |          |             |                                            |
+	
+3. Negative check - froentend validations
+	Use test data with invalid data
+	Fulfill the <Field_Name> field with <Invalid_value> value
+	Validate error code <error_code> and error message in response <error_message>
+	
+	|Iteration_name                         |Field_Name      |Invalid_value           |error_code|error_message                |
+	|Email is already exist                 |Email Address   |already_registered_email|100456    |"Email is already registered"|
+	|Studen ID number is not exist in system|Studen ID number|invalid_studentID       |100777    |"StudentID is not existed"   |
